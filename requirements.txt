@@ -1,0 +1,4 @@
+kaggle==1.5.6
+numpy
+pandas
+scikit-learn
