@@ -13,7 +13,7 @@ KAGGLE_CONFIG_DIR = os.path.join(ROOT_DATA_DIR, ".kaggle")
 
 def download_dataset(root_dir: str = ROOT_DATA_DIR, kaggle_dir: str = KAGGLE_CONFIG_DIR):
     os.environ["KAGGLE_CONFIG_DIR"] = kaggle_dir
-    os.system("kaggle datasets download" " -d snap/amazon-fine-food-reviews" " -f {} -p {}".format(FILE, root_dir))
+    os.system("kaggle datasets download -d snap/amazon-fine-food-reviews -f {} -p {}".format(FILE, root_dir))
     os.system("unzip -o {0}/{1}.zip -d {0} ; rm {0}/{1}.zip".format(root_dir, FILE))
 
     return

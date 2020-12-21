@@ -1,7 +1,7 @@
 # Project specific
 data/
 model_checkpoint/
-models/
+model/
 .vscode/settings.json
 
 # Byte-compiled / optimized / DLL files
